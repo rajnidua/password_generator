@@ -40,7 +40,7 @@ function generatePassword(){
   lowerCase=window.confirm("Do you want to include lowercase?");
     if(lowerCase ===true){
       lowerCaseStr="abcdefghijklmnopqrstuvwxyz";
-      console.log("lower Case String is: "+lowerCaseStr);
+      console.log("lower case String is: "+lowerCaseStr);
       passwordStr=passwordStr.concat(lowerCaseStr);
       console.log("concatenation of lower case string is: "+passwordStr);
     }
@@ -48,7 +48,7 @@ function generatePassword(){
   upperCase=window.confirm("Do you want to include uppercase?");
     if(upperCase ===true){
       upperCaseStr=lowerCaseStr.toUpperCase();
-      console.log("lower Case String is: "+upperCaseStr);
+      console.log("upper case String is: "+upperCaseStr);
       passwordStr=passwordStr.concat(upperCaseStr);
       console.log("concatenation of upper case string is: "+passwordStr);
     }
@@ -87,9 +87,9 @@ function createPassword( passwordStr,  length){
   var result="";
   for(var i=0;i<length;i++){
     result+=passwordStr.charAt(Math.floor(Math.random()*passwordStr.length));
-    console.log("character at position "+i+"is: "+result);
+    console.log("character for position  "+i+"is: "+result);
   }
-    console.log("FINAL:character at position "+i+"is: "+result);
+    console.log("FINAL:character for position "+i+" is: "+result);
     return result;
 } 
 
